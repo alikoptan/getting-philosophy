@@ -2,9 +2,9 @@
 
 ### Install & Run
 1. Run ```pip install requirements.txt```
-2. Pass the link(s) as an argument to the python script.
+2. Pass the link(s) as an argument to the python script. e.g.
 
-e.g. ```python script.py "https://en.wikipedia.org/wiki/Special:Random" "https://en.wikipedia.org/wiki/B_sharp_tree"```
+```python script.py "https://en.wikipedia.org/wiki/Special:Random" "https://en.wikipedia.org/wiki/B_sharp_tree"```
 
 ### Scraping
 Following the chain consists of:
