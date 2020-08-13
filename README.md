@@ -14,5 +14,4 @@ Following the chain consists of:
 3. Selecting all links that direct to existing Wiki pages (excluding links to files).
 4. Picking the first valid link, repeat.
 
-### Conclusion
-The law does not apply to all pages; some get stuck in a loop or a page that leads to nowhere. I tested my script randomly 1000 times, XXXX of those eventually led to philosophy. 
+
