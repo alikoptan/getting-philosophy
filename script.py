@@ -37,10 +37,9 @@ def iterate(url):
             break
     return next_link
 
-for i in range(1, len(sys.argv)):
+
+def run(url):
     destination = 'https://en.wikipedia.org/wiki/Philosophy'
-    url = sys.argv[i]
-    
     print('Start:', url)
     visited_links = {}
     while True:
@@ -49,15 +48,18 @@ for i in range(1, len(sys.argv)):
         url = iterate(url)
 
         if url == 'N/A' or url in visited_links:
-            print('Reached a dead end or a loop.')
-            break
+            print('Reached a dead-end or a loop.')
+            return False
 
         print('Navigated to:', url)
 
         if url == destination:
             print('Reached Philosophy!')
-            break
+            return True
 
+
+for i in range(1, len(sys.argv)):
+    run(sys.argv[i])
 
 
 
